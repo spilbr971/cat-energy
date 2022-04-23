@@ -30,7 +30,44 @@
             </nav>
         </div>
     </header>
-
+    <main class="page-main">
+        <h1 class="page-main__title">Подбор программы</h1>
+        <section class="page-main__form section-form">
+            <h2 class="section-form__title">Заполните анкету, и мы подберем <br> программу питания для вашего кота</h2>
+            <form action="https://echo.htmlacademy.ru" method="post" class="section__form main-form">
+                <fieldset class="about-cat main-form__about-cat">
+                    <legend class="visually-hidden">Расскажите про котика</legend>
+                    <label class="label about-cat__label">Имя:*<input class="text-input about-cat__input" name="cat-name" type="text" placeholder="Барсик" required></label>
+                    <label class="label about-cat__label">Вес (кг):*<input class="text-input about-cat__input" name="cat-weight" type="tel" placeholder="7" required></label>
+                    <label class="label about-cat__label">Возраст (лет):<input class="text-input about-cat__input" name="cat-age" type="tel" placeholder="7"></label>
+                </fieldset>
+                <fieldset class="what-result main-form__result">
+                    <legend class="visually-hidden">Какой результат вы хотите?</legend>
+                    <label class="label what-result__label"><input class="text-input what-result__input" type="radio" name="result" value="slim" checked>Похудение</label>
+                    <label class="label what-result__label"><input class="text-input what-result__input" type="radio" name="result" value="muscles">Набор массы</label>
+                    <label class="label what-result__label"><input class="text-input what-result__input" type="radio" name="result" value="idk">Не знаю (Нужен ваш совет)</label>
+                </fieldset>
+                <fieldset class="cat-owner main-form__owner">
+                    <legend class="legend cat-owner__legend">Контактные данные (владельца кота)</legend>
+                    <label>E-mail:*<input class="text-input cat-owner__input" name="owner-email" type="text" required></label>
+                    <label>Телефон:*<input class="text-input cat-owner__input" name="owner-phone" type="tel" required></label>
+                </fieldset>
+                <fieldset class="comment main-form__comment">
+                    <legend class="legend comment__legend">Коментарий</legend>
+                    <textarea class="text-input comment__textarea" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+                </fieldset>
+                <fieldset class="options main-form__options">
+                    <legend class="legend options__legend">Дополнительно</legend>
+                    <label class="label label--options options__label"><input class="checkbox-input options__checkbox" type="checkbox" name="sweetener" checked>Сахарозаменитель</label>
+                    <label class="label label--options options__label"><input class="checkbox-input options__checkbox" type="checkbox" name="water">Питьевая вода</label>
+                    <label class="label label--options options__label"><input class="checkbox-input options__checkbox" type="checkbox" name="milk">Молоко</label>
+                    <label class="label label--options options__label"><input class="checkbox-input options__checkbox" type="checkbox" name="vitamins">Витамины</label>
+                </fieldset>
+                <button class="main-form__button button button--special" type="submit">Отправить заявку</button>
+                <small class="main-form__legend">* — Обязательные поля</small>
+            </form>
+        </section>
+    </main>
     <footer class="page-footer">
         <section class="page-footer__social social">
             <h2 class="visually-hidden">
