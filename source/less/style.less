@@ -1,10 +1,10 @@
 // Начните писать стили здесь
 
 // Приготовления
+@import url(library/normalize/normalize.less);
 @import url(fonts.less);
 @import url(variables.less);
 @import url(mixins.less);
-@import url(library/normalize/normalize.less);
 @import url(library/visually-hidden/visually-hidden.less);
 
 // Основной код
@@ -15,6 +15,7 @@
 
 // Button
 @import url(common/button/button.less);
+@import url(common/button/--special/button--special.less);
 
 // Slider
 @import url(library/slider/slider.less);
@@ -52,3 +53,16 @@
 @import url(common/burger-menu/__item/--active/burger-menu__item--active.less);
 
 
+
+// Main
+@import url(common/page-main/page-main.less);
+@import url(common/page-main/__wrapper/page-main__wrapper.less);
+
+// Promo
+@import url(common/page-main/__promo/page-main__promo.less);
+@import url(common/promo/promo.less);
+@import url(common/promo/__title/promo__title.less);
+@import url(common/promo/__img/promo__img.less);
+@import url(common/promo/__desc/promo__desc.less);
+@import url(common/promo/__button/promo__button.less);
+@import url(common/promo/__background/promo__background.less);
