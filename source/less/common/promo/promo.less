@@ -2,4 +2,44 @@
   color: @basic-white;
   position: relative;
   margin-bottom: 22px;
+
+  &__background {
+    background: url(../less/common/promo/__background/index-background-mobile@1x.jpg) no-repeat center;
+    background-color: @basic-green-3;
+    box-sizing: border-box;
+    height: 305px;
+    padding-top: 27px;
+    margin-bottom: 135px;
+  }
+
+  &__title {
+    .font(Oswald, 400, 36px, 36px);
+    margin: 0;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  &__img {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 165px;
+  }
+
+  &__desc {
+    .font(Oswald, 400, 14px, 14px);
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__button {
+    padding: 14px 0;
+    width: 100%;
+
+    font-size: 14px;
+    line-height: 18px;
+
+    // position: relative;
+    // top: 135px;
+  }
 }

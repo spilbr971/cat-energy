@@ -7,7 +7,6 @@
   background-color: transparent;
   position: relative;
 
-
   &::after,
   &::before {
     content: "";
@@ -18,10 +17,53 @@
     background-color: @basic-black;
     transition: all 0.3s ease 0s;
   }
+
   &::after {
     top: 0;
   }
+
   &::before {
     bottom: 0;
+  }
+
+  &__item {
+    position: absolute;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: @basic-black;
+
+    &--active {
+      .burger-menu__item--active {
+        display: none;
+        transition: all 0.3s ease 0s;
+      }
+
+    }
+  }
+
+  &--active {
+    .burger-menu--active {
+      width: 24px;
+      height: 18px;
+      position: relative;
+
+
+      &::after {
+        top: auto;
+        content: "";
+        transform: rotate(47deg);
+        transition: all 0.3s ease 0s;
+      }
+
+      &::before {
+        left: 0;
+        bottom: auto;
+        content: "";
+        transform: rotate(-47deg);
+        transition: all 0.3s ease 0s;
+      }
+    }
+
   }
 }

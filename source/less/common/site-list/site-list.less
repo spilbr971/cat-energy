@@ -6,4 +6,26 @@
   text-align: center;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
+
+  &--active {
+    display: none;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: @basic-black;
+
+    &:visited {
+      text-decoration: none;
+      color: @basic-black;
+    }
+
+    padding: 20px;
+  }
+
+  &__item {
+    border-top: 1px solid #e6e6e6;
+    list-style: none;
+    padding: 23px 0;
+  }
 }
