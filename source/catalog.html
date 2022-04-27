@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
   <title>Кэт энерджи: Каталог</title>
 </head>
@@ -14,8 +15,8 @@
         <img src="img/logo-mobile.svg" alt="Логотип «Кэт энерджи»" width="191" height="38">
       </a>
       <nav class="main-nav">
-        <button type="button" class="main-nav__burger burger-menu burger-menu--active">
-          <span class="visually-hidden">Открыть меню</span>
+        <button type="button" aria-label="Открыть меню" class="main-nav__burger burger-menu burger-menu--active">
+          <span class="burger-menu__item burger-menu__item--active"></span>
         </button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
@@ -296,6 +297,7 @@
       </a>
     </section>
   </footer>
+  <script src="js/burger.js"></script>
 </body>
 
 </html>
